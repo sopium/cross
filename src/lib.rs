@@ -359,6 +359,8 @@ impl Target {
             || self.is_windows()
             || self.is_emscripten()
             || self.is_apple()
+            // Who doesn't need docker?
+            || true
     }
 
     fn needs_interpreter(&self) -> bool {
